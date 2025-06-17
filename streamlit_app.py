@@ -1,75 +1,22 @@
 import streamlit as st
-
 import matplotlib.tri as tri
-import pandas as pd
 import os
-import math
-from pathlib import Path
-from openai import OpenAI
 import pandas as pd
-import base64
 import matplotlib.pyplot as plt
-import seaborn as sns
 import numpy as np
-import pydeck as pdk
-import plotly.figure_factory as ff
-from vega_datasets import data
 import altair as alt
-import plotly.express as px
 import plotly.graph_objects as go
-from streamlit_echarts import st_echarts
-import datetime
-import random
-import time
-import json
-from pyecharts.charts import Sunburst
-from streamlit_echarts import st_pyecharts
-from pyecharts import options as opts
 from bokeh.models import  HoverTool
-from bokeh.plotting import figure, show
-from bokeh.plotting import figure
 from bokeh.models import ColumnDataSource
-from bokeh.palettes import Viridis3
 from bokeh.layouts import gridplot
 from bokeh.models import BoxSelectTool, LassoSelectTool
-from bokeh.plotting import curdoc, figure
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.preprocessing import StandardScaler
-# from __future__ import annotations
 import matplotlib
 import seaborn as sns
-import shutil
-import tempfile
-from sklearn import preprocessing
-import matplotlib as mpl
-import subprocess
-from pathlib import Path
-import time
-import sys
-import requests
 from PIL import Image
-from io import BytesIO
 from streamlit.components.v1 import html
 from sklearn.preprocessing import StandardScaler
 from matplotlib.patches import Rectangle
-
-
-
-from pyecharts.charts import Pie
-from bokeh.plotting import figure, show
-from bokeh.transform import cumsum
-from bokeh.palettes import Spectral6
-from streamlit.components.v1 import iframe
-from streamlit.components.v1 import iframe
-import threading
-import webbrowser
-import http.server
-import socketserver
-import requests
-
-
-
-# from pythonProject3.compute_normals import load_and_process_mesh, export_interactive_html
 
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 设置中文字体
 plt.rcParams['axes.unicode_minus'] = False  # 正确显示负号
