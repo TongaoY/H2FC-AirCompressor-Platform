@@ -17,6 +17,12 @@ from PIL import Image
 from streamlit.components.v1 import html
 from sklearn.preprocessing import StandardScaler
 from matplotlib.patches import Rectangle
+import plotly.figure_factory as ff
+from bokeh.plotting import figure, show
+from bokeh.sampledata.penguins import data
+from bokeh.transform import factor_cmap, factor_mark
+from openai import OpenAI
+from openai import APIConnectionError
 
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 设置中文字体
 plt.rcParams['axes.unicode_minus'] = False  # 正确显示负号
@@ -242,8 +248,7 @@ with tabs[0]:
 
             # 创建一个容器并显示内容
             with st.container():
-                import plotly.figure_factory as ff
-                import numpy as np
+         
 
                 # Add histogram data
                 x1 = np.random.randn(200) - 2
@@ -502,10 +507,6 @@ with tabs[0]:
                 width=280,  # 设置图表宽度，略小于容器宽度以考虑内边距
                 height=230,  # 设置图表高度，略小于容器高度以考虑标题和内边距
                 margin=dict(l=0, r=0, b=0, t=0),template="plotly_dark", ) # 暗色主题
-
-            from bokeh.plotting import figure, show
-            from bokeh.sampledata.penguins import data
-            from bokeh.transform import factor_cmap, factor_mark
 
             # 交互控制面板
             point_size = 12
@@ -1728,8 +1729,7 @@ with tabs[1]:
                 # 显示图形
                 st.pyplot(fig)
             elif option == "三维散点图":
-                from matplotlib import cm
-                from matplotlib.colors import Normalize
+           
                 all_columns = df.columns.tolist()
 
                 col1, col2, col3,col4 = st.columns(4)
